@@ -11,6 +11,8 @@ gem 'carrierwave'
 # image size manipulation gem
 gem 'mini_magick', '~>4.3'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+gem 'figaro'
+gem 'fog'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 
@@ -61,6 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
   gem 'pg'
+  gem 'aws-sdk', '~>2.3'
 end
 
 
